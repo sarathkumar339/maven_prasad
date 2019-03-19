@@ -28,6 +28,10 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
+    <repository>
+      <id>maven-all</id>
+      <url>http://192.168.33.10:8081/repository/maven-all/</url>
+    </repository>
   </repositories>
 
 
