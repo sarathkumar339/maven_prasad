@@ -28,10 +28,6 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
-    <repository>
-      <id>maven-all</id>
-      <url>http://192.168.33.10:8081/repository/maven-all/</url>
-    </repository>
   </repositories>
 
 
@@ -110,12 +106,12 @@
   </build>
   <distributionManagement>
 		<repository>
-			<id>maven-releases</id>
-			<url>http://192.168.33.10:8081/repository/maven-releases/</url>
+			<id>deployment</id>
+			<url>http://localhost:8081/repository/practice_release/</url>
 		</repository>
 		<snapshotRepository>
-			<id>maven-snapshots</id>
-			<url>http://192.168.33.10:8081/repository/maven-snapshots/</url>
+			<id>deployment</id>
+			<url>http://localhost:8081/repository/practice_snapshot/</url>
 		</snapshotRepository>		
   </distributionManagement>
 
