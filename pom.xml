@@ -5,7 +5,7 @@
   <groupId>we.com</groupId>
   <artifactId>webapps</artifactId>
   <packaging>war</packaging>
-  <version>4.0</version>
+  <version>4.0-SNAPSHOT</version>
   <name>webapps</name>
   <url>http://maven.apache.org</url>
 
@@ -64,6 +64,7 @@
   </dependencies>
 
   <build>
+    <finalName>test</finalName>
     <sourceDirectory>src/java</sourceDirectory>
     <outputDirectory>target/classes</outputDirectory>
     <plugins>
@@ -105,15 +106,16 @@
     </plugins>
   </build>
   <distributionManagement>
-
-		<repository>
-			<id>Maven-release</id>
-			<url>http://192.168.33.10:8081/repository/maven-releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>Maven-snapshot</id>
-			<url>http://192.168.33.10:8081/repository/maven-snapshots/</url>
-		</snapshotRepository>		
-  </distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>practice_release</name>
+            <url>http://localhost:8081/repository/practice_release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>practice_snapshot</name>
+            <url>http://localhost:8081/repository/practice_snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
